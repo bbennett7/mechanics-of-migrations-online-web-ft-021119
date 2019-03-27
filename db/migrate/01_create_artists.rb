@@ -5,16 +5,6 @@ class CreateArtists < ActiveRecord::Migration[5.2]
   def down
   end
 
-  #def self.create_table
-  #  sql = <<-SQL
-  #    id INTEGER PRIMARY KEY,
-  #    title TEXT,
-  #    length INTEGER
-  #    )
-  #  SQL
-  #  ActiveRecord::Base.connection.execute(sql)
-  #end
-
   def change
     create_table :artists do |t|
       t.string :name
